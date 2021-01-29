@@ -29,9 +29,9 @@ class Bank extends React.Component{
 
     render(){
         return(
-            <div className="container">
-                <div className="card header alert alert-danger">
-                    <h4>Cicilan Bank</h4>
+            <div className="App container col-sm-4">
+                <div className="card-header bg-primary">
+                    <h3>Cicilan Bank</h3>
                 </div>
 
                 <div class="card body">
@@ -57,7 +57,7 @@ class Bank extends React.Component{
                         <option value = {24}>24 Bulan</option>
                     </select>
 
-                    <button className="btn btn-success btn block mb-1"
+                    <button className="btn btn-primary btn block mb-1"
                     onClick={() => this.Hitung()}>
                         Hitung
                     </button>

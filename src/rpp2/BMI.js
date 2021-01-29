@@ -59,9 +59,9 @@ class BMI extends React.Component{
 
     render(){
         return(
-            <div className="container">
-                <div className="card header">
-                    <h4>Body Mass Index</h4>
+            <div className="App container col-sm-4">
+                <div className="card-header bg-primary">
+                    <h3>Body Mass Index</h3>
                 </div>
                 <hr/>
                 <div className="card body">
@@ -77,8 +77,9 @@ class BMI extends React.Component{
                     value={this.state.tinggi}
                     onChange={ ev => this.setState({tinggi: ev.target.value})}
                     /> 
+                    <hr/>
 
-                    <button className="btn btn-success btn-block mb-1"
+                    <button className="btn btn-primary btn-block mb-1"
                     onClick={() => this.HitungBMI()}>
                         Hitung BMI
                     </button>

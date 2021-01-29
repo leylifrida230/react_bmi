@@ -44,7 +44,7 @@ class Biner extends Component {
     return (
       <div className="App container col-sm-4">
         <div className="card-body bg-danger">
-          <h2>Konversi Bilangan Biner</h2>
+          <h3>Konversi Bilangan Biner</h3>
         </div>
         <hr />
         <form onSubmit={this.hitung}>

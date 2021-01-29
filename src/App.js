@@ -18,6 +18,7 @@ class App extends React.Component{
         <div>
           <Navbar/>
         </div>
+        <hr/>
         <div>
           <Switch>
             <Route exact path="/bmi" component={BMI}/>

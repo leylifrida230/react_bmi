@@ -28,9 +28,9 @@ class PPN extends React.Component{
 
     render(){
         return(
-            <div className="container">
-                <div className="card header alert alert-danger">
-                    <h4>Hitung Harga Akhir</h4>
+            <div className="App container col-sm-4">
+                <div className="card-header bg-danger">
+                    <h3>Hitung Harga Akhir</h3>
                 </div>
 
                 <div className="card body">

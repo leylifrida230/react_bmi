@@ -44,7 +44,7 @@ class Hexadesimal extends Component {
     return (
       <div className="App container col-sm-4">
         <div className="card-body bg-danger">
-          <h2>Konversi Bilangan Heksadesimal</h2>
+          <h4>Konversi Bilangan Heksadesimal</h4>
         </div>
         <hr />
         <form onSubmit={this.hitung}>
