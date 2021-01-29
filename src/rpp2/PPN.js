@@ -7,7 +7,7 @@ class PPN extends React.Component{
             harga : 0,
             ppn : 0,
             diskon : 0,
-            hasil : 0,
+            hasil : '',
         }
     }
 
@@ -22,7 +22,7 @@ class PPN extends React.Component{
        let result = (harga - b) + a
 
         this.setState ({
-            hasil: result
+            hasil: "Rp." + result
         })
     }
 
@@ -52,13 +52,15 @@ class PPN extends React.Component{
                     onChange={ev => this.setState({diskon: ev.target.value})} 
                     />
 
-                    <button className="btn btn-danger btn block mb-1"
+                    <hr/>
+
+                    <button className="btn btn-danger btn block mb-2"
                     onClick={() => this.Hitung()}>
                         Hitung
                     </button>
 
                     Harga Akhir 
-                    <input type="number" className="form control"
+                    <input type="string" className="form control"
                     value={this.state.hasil} readOnly
                     />
 

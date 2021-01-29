@@ -7,7 +7,7 @@ class Bank extends React.Component{
             nominal : 0,
             bunga : 0,
             periode : 0,
-            hasil : 0,
+            hasil : "",
 
         }
     }
@@ -23,7 +23,7 @@ class Bank extends React.Component{
         let result = a + b
 
         this.setState ({
-            hasil: result
+            hasil: "Rp." + result
         })
     }
 
@@ -57,13 +57,15 @@ class Bank extends React.Component{
                         <option value = {24}>24 Bulan</option>
                     </select>
 
+                    <hr/>
+
                     <button className="btn btn-primary btn block mb-1"
                     onClick={() => this.Hitung()}>
                         Hitung
                     </button>
 
                     Nilai Cicilan
-                    <input type="number" className="form control"
+                    <input type="string" className="form control"
                     value={this.state.hasil} readOnly />
 
 
